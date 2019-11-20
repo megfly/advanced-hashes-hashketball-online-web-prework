@@ -175,6 +175,20 @@ def team_names
 end
 
 
+def player_numbers(team_name)
+  #returns array of jersey numbers for taht team 
+  
+  game_hash.map do |place, team|
+    if team[:team_name] == team_name
+      team.each do |attributes, data|
+        if attributes == player_name
+          data[:numbers]
+        end
+      end 
+    end
+  end 
+end 
+
 
 
 
