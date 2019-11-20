@@ -182,7 +182,7 @@ def player_numbers(team_name)
     if team[:team_name] == team_name
       team.each do |attributes, data|
         if attributes == player_name
-          data[:numbers]
+          data[:number]
         end
       end 
     end
