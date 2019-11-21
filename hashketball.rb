@@ -223,7 +223,7 @@ def big_shoe_rebounds
    team[:players].each do |attributes, data|
      if cur_biggest < data[:shoe]
        cur_biggest = data[:shoe]
-       rebounds = data[:stats][:rebounds]
+       rebounds = data[:players][:rebounds]
      end 
    end 
  end 
