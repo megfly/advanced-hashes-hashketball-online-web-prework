@@ -204,6 +204,7 @@ def player_stats(player_name)
           if player[:player_name] == players_name 
             new_hash = player.delete_if do |k, v|
               k == :player_name
+            end 
           end 
         end 
       end
