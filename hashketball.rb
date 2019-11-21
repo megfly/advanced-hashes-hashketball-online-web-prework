@@ -224,17 +224,14 @@ def big_shoe_rebounds
         data.each do |player|
           if player[:points] > most_points
             most_points = player[:points]
-            points_ownder = player[:player_name]
-          
-     if cur_biggest < data[:shoe]
-       cur_biggest = data[:shoe]
-       rebounds = data[:players][:rebounds]
-     end 
-   end 
- end 
-   end 
- end 
- rebounds 
+            points_owner = player[:player_name]
+          end 
+        end 
+      end
+    end 
+  end 
+end 
+ return points_owner 
  end 
  
   
