@@ -218,7 +218,7 @@ end
 def big_shoe_rebounds
  rebounds = 0 
  cur_biggest = 0 
- biggest_name = ""
+ 
  game_hash.each do |place, team|
    team[:players].each do |attributes, data|
      if cur_biggest < data[:shoe]
